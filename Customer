@@ -1,0 +1,5 @@
+select tb1.Name as Customers
+From Customers as tb1
+Left Join Orders as tb2
+On tb1.Id=tb2.CustomerId
+Where tb2.Id is NULL;
